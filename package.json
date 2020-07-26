@@ -1,0 +1,22 @@
+{
+  "name": "nodejstraining",
+  "version": "1.0.0",
+  "description": "\"Nodejs with html and css training course\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "io": "nodemon server.js"
+  },
+  "author": "jean-pierre14",
+  "license": "MIT",
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "consola": "^2.14.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "mongoose": "^5.9.25",
+    "nodemon": "^2.0.4"
+  }
+}

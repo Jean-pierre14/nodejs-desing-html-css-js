@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="shortcut icon" href="./images/18.png" type="image/png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+</head>
+<body>
+    <nav class="navbar shadow">
+        <a href="/" class="logo color-light font-ubuntu"><%= title%></a>
+        <button type="button" id="openMenu" class="color-light openMenu"><i class="fa fa-bars"></i></button>
+        <ul>
+            <li><a href="/" class="active color-light font-roboto">Home</a></li>
+            <li><a href="#" class="color-light font-roboto">About Us</a></li>
+            <li><a href="#" class="color-light font-roboto">Profil</a></li>
+            <li><a href="#" class="color-light font-roboto">Message</a></li>
+            <li><a href="/videos" class="color-light font-roboto">Our videos</a></li>
+        </ul>
+    </nav>
+    <div class="container height-90vh">
+        <div class="box shadow">
+            <div class="center-items">
+                <h1 class="font-roboto color-red-black">Welcome <%= title%></h1>
+                <p class="font-ubuntu font-18 color-red">
+                    To your web page index, using express and html with css
+                </p>
+                <p class="font-ubuntu font-18 color-red mt-20">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, beatae cum eveniet dolores numquam necessitatibus itaque ea aperiam praesentium aspernatur iste, explicabo dolor repellendus error architecto qui? Cumque, quidem sapiente.
+                </p>
+                <br>
+                <button class="btn btn-lg btn-primary">Sniper <i class="fa fa-arrow-circle-left"></i></button>
+                <button class="btn btn-success"><%= title %> <i class="fa fa-arrow-circle-left"></i></button>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div class="container height-90vh">
+        <div class="box">
+            <h1 class="text-center text-lightblue font-ubuntu color-red-black mb-20">Our video</h1>
+            <br>
+                <iframe style="width: 100%; height: 600px;" src="https://www.youtube-nocookie.com/embed/3jZ5vnv-LZc?start=7" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="container height-90vh">
+        <div class="center-items">
+            <h1 class="text-center color-red-black font-ubuntu font-50">About Us</h1>
+            <p class="color-red font-18 font-roboto mt-20">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis numquam vero temporibus totam iusto iure sunt aperiam saepe minus. Recusandae hic debitis asperiores, quam quae corporis maiores culpa iste accusantium?
+            </p>
+            <p class="font-18 font-ubuntu color-red mt-20">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est doloremque vero iure rerum nostrum, aspernatur voluptates sit officiis? Ullam, quod eum. Aliquid est cumque voluptates alias at placeat nemo. Obcaecati minus vero, ipsum quae nesciunt culpa ullam in sunt, cum ratione, ipsam laborum magni minima? Autem repellendus saepe obcaecati rerum?
+            </p>
+
+            <div class="grid-3">
+                <div class="card font-ubuntu">
+                    <i class="fa fa-bars fa-4x color-success" aria-hidden="true"></i>
+                    <h3 class="text-center color-red-black">Search for a job</h3>
+                    <p class="font-18 mb-20">You can find a job here</p>
+                    <button class="btn btn-success">View more</button>
+                </div>
+                <div class="card font-ubuntu">
+                    <i class="fa fa-search fa-4x color-primary"></i>
+                    <h3 class="text-center color-red-black">Search for a job</h3>
+                    <p class="font-18 mb-20">Learn IT Code here</p>
+                    <button class="btn btn-primary">View more</button>
+                </div>
+                <div class="card font-ubuntu">
+                    <i class="fa fa-heart fa-4x color-warning" aria-hidden="true"></i>
+                    <h3 class="text-center color-red-black">Search for a job</h3>
+                    <p class="font-18 mb-20">Fin a Girl or a Boy here</p>
+                    <button class="btn btn-warning">View more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container height-90vh">
+        <div class="center-items">
+            <h1 class="color-red-black text-center font-ubuntu">Contact Us</h1>
+            <hr>
+            <div class="grid-2-1">
+                <div>
+                    <img src="./images/special/unnamed.jpg" alt="graphic image">
+                </div>
+                <div>
+                    <form action="" autocomplete="off" method="post">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Email@goma.cd">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" placeholder="writting..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-xl btn-danger btn-block">
+                            Send 
+                            <i class="fa fa fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

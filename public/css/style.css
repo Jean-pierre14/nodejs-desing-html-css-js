@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+/* Colors */
+.color-light{
+    color: #fff;
+}
+
+.color-red{
+    color: rgb(228, 0, 0);
+}
+.color-red-black{
+    color: rgb(143, 0, 0);
+}
+
+.color-success{
+    color: rgb(23, 139, 23);
+}
+.color-primary{
+    color: rgb(36, 92, 184);
+}
+.color-warning{
+    color: rgb(216, 27, 122);
+}
+.font-ubuntu{
+    font-family: ubuntu !important;
+}
+.font-roboto{
+    font-family: roboto !important;
+}
+
+.font-18{
+    font-size: 18px;
+}
+.font-50{
+    font-size: 50px;
+}
+
+.mt-20{
+    margin-top: 20px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+
+
+/* Button */
+.btn{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+.btn:hover{
+    opacity: 0.5;
+}
+.btn-lg{
+    padding: 8px 50px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+}
+.btn-xl{
+    padding: 20px;
+}
+.btn-block{
+    position: relative;
+    display: block;
+    width: 100%;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+.btn-primary{
+    background-color: cornflowerblue;
+    color: #fff;
+}
+.btn-success{
+    background-color: rgb(49, 143, 49);
+    color: #fff;
+}
+.btn-warning{
+    background-color: rgb(255, 187, 0);
+    color: #fff;
+}
+.btn-danger{
+    background-color: rgb(207, 32, 20);
+    color: #fff;
+}
+/* Button */
+
+.center-items{
+    padding: 20px;
+}
+@media(min-width: 990px){
+    
+.navbar{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar button.openMenu{
+    display: none;
+}
+.navbar a.logo{
+    position: relative;
+    margin-left: 40px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+}
+.navbar ul{
+    position: relative;
+    display: flex;
+    margin-right: 40px;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid red;
+    border-radius: 4px;
+    transition: 0.5s all ease;
+}
+.navbar ul li a:hover,
+.navbar ul li a.active{
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+
+
+/* Container */
+
+.container{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.shadow{
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+}
+.center-items{
+    position: relative;
+    display: block;
+    padding: 200px;
+    margin: auto;
+}
+.height-90vh{
+    position: relative;
+    min-height: 90vh;
+}
+
+.box{
+    position: relative;
+    width: 70%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+.flex-display{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.flex-display iframe{
+    margin: 10px;
+}
+
+
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    gap: 20px;
+    margin: 200px 0;
+}
+
+.grid-3 .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 50px 0 10px 0;
+    transition: 0.3s all ease;
+}
+
+.grid-3 .card:hover{
+    box-shadow: 7px 6px 8px rgba(0,0,0,0.3);
+}
+
+.grid-3 .card i,
+.grid-3 .card path,
+.grid-3 .card svg{
+    position: relative;
+    margin: 50px 0 50px 0;
+}
+    .grid-2-1{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .grid-2-1 > div{
+        position: relative;
+        padding: 50px 0;
+    }
+    .grid-2-1 > div img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .grid-2-1 > div form{
+        position: relative;
+        display: block;
+    }
+    .form-group{
+        position: relative;
+        display: block;
+        width: 100%;
+        margin: 20px 0;
+    }
+    .form-group label{
+        position: relative;
+        display: block;
+        font-family: ubuntu !important;
+        font-size: 18px;
+    }
+    .form-group input,
+    .form-group textarea{
+        border: none;
+        background: none !important;
+        outline:  none !important;
+
+        display: block;
+        width: 100%;
+        padding: 10px 5px;
+        color: #999;
+        font-size: 18px;
+        font-style: italic;
+        font-family: ubuntu !important;
+        border-bottom: 2px solid rgb(228, 0, 0);
+    }
+}
+
+/* Container */
+
+/* Responsive media query */
+
+@media(max-width: 990px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .navbar{
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 50px;
+        background-color: #666;
+    }
+    .navbar button.openMenu{
+        position: absolute;
+        display: block;
+        top: 9px;
+        right: 20px;
+        border: none;
+        outline: none;
+        background: none !important;
+        font-size: 30px;
+    }
+    .navbar a.logo{
+        position: relative;
+        display: block;
+        padding-top: 10px;
+        margin-left: 20px;
+    }
+    .navbar ul{
+        position: absolute;
+        top: 50px;
+        left: -100%;
+        background: rgba(153, 153, 153, 0.733);
+        display: block;
+        width: 100%;
+        padding: 20px 0;
+        transition: 1s all ease;
+    }
+    .navbar ul.left-0{
+        position: absolute;
+        top: 50px;
+        left: 0;
+        z-index: 999;
+    }
+    .navbar ul li a.active,
+    .navbar ul li a:hover{
+        color: #eee;
+        background-color: rgba(17, 17, 17, 0.7);
+        border: none;
+        border-radius: 0;
+    }
+    .navbar ul li a{
+        text-align: center;
+        padding: 20px;
+        border: none;
+        display: block;
+    }
+    .container{
+        position: relative;
+        top: 50px;
+        left: 0;
+        display: block;
+    }
+    .box{
+        position: relative;
+        width: 90%;
+        margin: 10px auto;
+        /* background: red; */
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        padding: 20px;
+        font-family: ubuntu;
+    }
+    .box h1{
+        color: rgb(182, 2, 2);
+    }
+    .grid-3{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-self: center;
+        align-content: center;
+    }
+    .grid-3 .card{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 20px;
+        padding: 10px;
+        border: 1px solid rgba(0,0,0,0.1);
+    }
+    .grid-2-1{
+        position: relative;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .grid-2-1 > div{
+        width: 100%;
+        margin: 10px;
+    }
+    .grid-2-1 > div img{
+        position: relative;
+        width: 100%;
+    }
+    .form-group{
+        position: relative;
+        display: block;
+        margin: 20px 0;
+    }
+    .form-group label{
+        display: block;
+        font-family: ubuntu !important;
+        color: #999;
+    }
+    .form-group input,
+    .form-group textarea{
+        position: relative;
+        color: #999;
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #999;
+        border-radius: 4px;
+        outline: none !important;
+        font-size: 16px;
+        font-family: ubuntu;
+    }
+}
